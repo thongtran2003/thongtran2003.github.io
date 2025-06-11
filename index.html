@@ -37,14 +37,19 @@
       text-decoration: none;
       margin: 0 1rem;
       font-weight: 500;
+      transition: color 0.3s ease;
     }
     nav a:hover {
+      color: #dbeafe;
       text-decoration: underline;
     }
     main {
       max-width: 800px;
       margin: 2rem auto;
       padding: 0 1rem;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0; /* Start hidden for animation */
+      transform: translateY(20px);
     }
     section {
       margin-bottom: 2rem;
@@ -53,55 +58,17 @@
       color: #1e40af;
       border-bottom: 2px solid #e0e7ff;
       padding-bottom: 0.3rem;
+      opacity: 0;
+      transform: translateX(-30px);
+      animation: slideIn 0.6s forwards;
+    }
+    h2:nth-of-type(1) {
+      animation-delay: 0.2s;
+    }
+    h2:nth-of-type(2) {
+      animation-delay: 0.4s;
+    }
+    h2:nth-of-type(3) {
+      animation-delay: 0.6s;
     }
     footer {
-      text-align: center;
-      padding: 1rem;
-      background: #e5e7eb;
-      font-size: 0.9rem;
-      color: #555;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Thong Tran</h1>
-    <p>Mechanical Engineering Student | Designer | Builder</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hi, I'm Thong (or Tom) Tran. I'm a Mechanical Engineering student at UC Irvine with a passion for building cool things that move, work, and solve real problems. I’ve worked on projects from hyperloop maintenance vehicles to vibration mitigation systems in the semiconductor industry.</p>
-      <p>I enjoy combining hands-on engineering with design thinking — from CAD and FEA to actual prototyping and testing. Outside of class and work, I like playing badminton, rock climbing, and discovering great food spots with friends.</p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>PMTV Lifting Mechanism – HyperXite:</strong> Designed and analyzed the lifting system for a pod maintenance vehicle.</li>
-        <li><strong>Vibration Mitigation – ASML Internship:</strong> Worked on the Line Narrowing Module to reduce vibration impacts.</li>
-        <li><strong>Buds & Buzz – Additive Manufacturing:</strong> Created a modular earbud and pill container designed for rave/music festival goers.</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Feel free to reach out via email: <a href="mailto:thongtran21003@gmail.com">thongtran21003@gmail.com</a></p>
-      <p>Or connect with me on <a href="https://www.linkedin.com/in/thongtran21003" target="_blank">LinkedIn</a>.</p>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Thong Tran. All rights reserved.
-  </footer>
-
-</body>
-</html>
