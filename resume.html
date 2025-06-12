@@ -2,151 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thong Tran</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thong Tran Resume</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f8fb;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #1e3a8a;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
-    nav {
-      background: #3b82f6;
-      text-align: center;
-      padding: 0.75rem 0;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #dbeafe;
-      text-decoration: underline;
-    }
-    main {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
-      animation: fadeIn 1s ease forwards;
-      opacity: 0;
-      transform: translateY(20px);
+      color: #333;
     }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      color: #1e40af;
-      border-bottom: 2px solid #e0e7ff;
-      padding-bottom: 0.3rem;
-      opacity: 0;
-      transform: translateX(-30px);
-      animation: slideIn 0.6s forwards;
-    }
-    h2:nth-of-type(1) { animation-delay: 0.2s; }
-    h2:nth-of-type(2) { animation-delay: 0.4s; }
-    h2:nth-of-type(3) { animation-delay: 0.6s; }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes slideIn {
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    footer {
-      background: #1e3a8a;
-      color: #fff;
+    h1 {
+      color: #1e3a8a;
       text-align: center;
-      padding: 1rem 0;
-      margin-top: 3rem;
+      margin-bottom: 1rem;
     }
-
-    a.button {
-      display: inline-block;
+    .download-button {
+      display: block;
+      width: max-content;
+      margin: 0 auto 2rem;
       padding: 0.5rem 1rem;
       background: #3b82f6;
-      color: #fff;
+      color: white;
       border-radius: 5px;
+      text-align: center;
       text-decoration: none;
-      transition: background 0.3s ease;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
     }
-
-    a.button:hover {
+    .download-button:hover {
       background: #2563eb;
+    }
+    embed {
+      width: 100%;
+      height: 800px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Thong Tran</h1>
-    <p>Mechanical Engineering Student | CAD Designer | Problem Solver</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <a href="Thong_Tran_Resume.pdf" target="_blank">Resume</a>
-  </nav>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Hello! I'm Thong Tran, a Mechanical Engineering student with a strong passion for design, innovation, and hands-on problem solving. I’ve worked on a variety of engineering projects, including vibration mitigation systems and lifting mechanisms for hyperloop pods. I'm proficient in SolidWorks, FEA, and collaborative design.
-      </p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>
-        Here are a few highlights of my work:
-      </p>
-      <ul>
-        <li><strong>ASML Vibration Mitigation</strong> – Designed and analyzed a custom mount to reduce vibration in the Line Narrowing Module.</li>
-        <li><strong>PMTV Lifting Mechanism</strong> – Created a vehicle to lift a 300 kg pod off-track for maintenance, including full layout and mechanism selection.</li>
-        <li><strong>Buds & Buzz Earbud Case</strong> – Designed a rave-themed multi-compartment container using additive manufacturing techniques.</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>If you'd like to connect, feel free to reach out via email or LinkedIn!</p>
-      <p>Email: <a href="mailto:thongtran21003@gmail.com">thongtran21003@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/thongtran21003" target="_blank">linkedin.com/in/thongtran21003</a></p>
-    </section>
-  </main>
-
+  <h1>Thong Tran Resume</h1>
+  
+  <a href="Thong_Tran_Resume.pdf" class="download-button" target="_blank" download>Download Resume PDF</a>
+  
+  <embed src="Thong_Tran_Resume.pdf" type="application/pdf" />
+  
   <footer>
-    <p>&copy; 2025 Thong Tran. All rights reserved.</p>
+    &copy; 2025 Thong Tran
   </footer>
 </body>
 </html>
