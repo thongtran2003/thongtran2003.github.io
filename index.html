@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Thong Tran</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     body {
       margin: 0;
@@ -48,7 +49,7 @@
       margin: 2rem auto;
       padding: 0 1rem;
       animation: fadeIn 1s ease forwards;
-      opacity: 0; /* Start hidden for animation */
+      opacity: 0;
       transform: translateY(20px);
     }
     section {
@@ -62,13 +63,90 @@
       transform: translateX(-30px);
       animation: slideIn 0.6s forwards;
     }
-    h2:nth-of-type(1) {
-      animation-delay: 0.2s;
+    h2:nth-of-type(1) { animation-delay: 0.2s; }
+    h2:nth-of-type(2) { animation-delay: 0.4s; }
+    h2:nth-of-type(3) { animation-delay: 0.6s; }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    h2:nth-of-type(2) {
-      animation-delay: 0.4s;
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
-    h2:nth-of-type(3) {
-      animation-delay: 0.6s;
-    }
+
     footer {
+      background: #1e3a8a;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #3b82f6;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Thong Tran</h1>
+    <p>Mechanical Engineering Student | CAD Designer | Problem Solver</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="Thong_Tran_Resume.pdf" target="_blank">Resume</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Thong Tran, a Mechanical Engineering student with a strong passion for design, innovation, and hands-on problem solving. I’ve worked on a variety of engineering projects, including vibration mitigation systems and lifting mechanisms for hyperloop pods. I'm proficient in SolidWorks, FEA, and collaborative design.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>
+        Here are a few highlights of my work:
+      </p>
+      <ul>
+        <li><strong>ASML Vibration Mitigation</strong> – Designed and analyzed a custom mount to reduce vibration in the Line Narrowing Module.</li>
+        <li><strong>PMTV Lifting Mechanism</strong> – Created a vehicle to lift a 300 kg pod off-track for maintenance, including full layout and mechanism selection.</li>
+        <li><strong>Buds & Buzz Earbud Case</strong> – Designed a rave-themed multi-compartment container using additive manufacturing techniques.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to connect, feel free to reach out via email or LinkedIn!</p>
+      <p>Email: <a href="mailto:thongtran21003@gmail.com">thongtran21003@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/thongtran21003" target="_blank">linkedin.com/in/thongtran21003</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Thong Tran. All rights reserved.</p>
+  </footer>
+</body>
+</html>
